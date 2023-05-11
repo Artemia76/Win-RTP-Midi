@@ -5,8 +5,7 @@
     xmlns:local="using:MidiApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid x:Name="rcPending">
         <Grid.Background>
@@ -17,14 +16,14 @@
         </Grid.Background>
         <StackPanel HorizontalAlignment="Left" Height="55" Margin="38,27,0,0" VerticalAlignment="Top" Width="866" Orientation="Horizontal">
             <TextBox x:Name="txtPortNumber" HorizontalAlignment="Left" Margin="4, 3, 4, 0" TextWrapping="Wrap" Text="5004" VerticalAlignment="Top" Width="558" TextChanged="txtPortNumber_TextChanged"/>
-            <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStart_Click"/>
-            <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStop_Click"/>
+            <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStart_Click" Background="#FFE2E2E2"/>
+            <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStop_Click" Background="#FFEAEAEA"/>
         </StackPanel>
         <TextBox x:Name="txtIPAddress" HorizontalAlignment="Left" Margin="1054,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="283" IsReadOnly="True"/>
 
-        <Rectangle x:Name="rcFelt" Fill="#FF550B0B" HorizontalAlignment="Left" Height="10" Margin="0,341,0,0" Stroke="Black" VerticalAlignment="Top" Width="1366" />
+        <Rectangle x:Name="rcFelt" Fill="#550B0B" HorizontalAlignment="Left" Height="10" Margin="0,341,0,0" Stroke="Black" VerticalAlignment="Top" Width="1366" />
 
-        <Rectangle x:Name="rcKeyC3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="397" Margin="-41,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="74" PointerPressed="rcKeyXX_PointerPressed" PointerReleased="rcKeyXX_PointerReleased" Tag="48" PointerEntered="rcKeyXX_PointerEntered" PointerExited="rcKeyXX_PointerExited" />
+        <Rectangle x:Name="rcKeyC3" Fill="#F4F4F5" HorizontalAlignment="Left" Height="397" Margin="-41,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="74" PointerPressed="rcKeyXX_PointerPressed" PointerReleased="rcKeyXX_PointerReleased" Tag="48" PointerEntered="rcKeyXX_PointerEntered" PointerExited="rcKeyXX_PointerExited" />
         <Rectangle x:Name="rcKeyCSharp3" Fill="#FF070715" HorizontalAlignment="Left" Height="239" Margin="0,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="54" Canvas.ZIndex="1" PointerPressed="rcKeyXX_PointerPressed" PointerReleased="rcKeyXX_PointerReleased" Tag="49" PointerEntered="rcKeyXX_PointerEntered" PointerExited="rcKeyXX_PointerExited" />
         <Rectangle x:Name="rcKeyD3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="397" Margin="32,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="74" PointerPressed="rcKeyXX_PointerPressed" PointerReleased="rcKeyXX_PointerReleased" Tag="50" PointerEntered="rcKeyXX_PointerEntered" PointerExited="rcKeyXX_PointerExited" />
         <Rectangle x:Name="rcKeyDSharp3" Fill="#FF070715" HorizontalAlignment="Left" Height="239" Margin="81,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="54" Canvas.ZIndex="1" PointerPressed="rcKeyXX_PointerPressed" PointerReleased="rcKeyXX_PointerReleased" Tag="51" PointerEntered="rcKeyXX_PointerEntered" PointerExited="rcKeyXX_PointerExited" />

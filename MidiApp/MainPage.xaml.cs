@@ -1,22 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
 
-using Spring.Net;
-using Spring.Net.Interop;
 using Spring.Net.Rtp;
-using Spring.Net.Rtp.Interop;
 
 using Spring.Net.Rtp.AppleMidi;
 using Spring.WinRT.Utils;
@@ -33,7 +24,7 @@ namespace MidiApp
         private AppleMidiSessionListener listener_;
         private string address_;
 
-        private IRegisterService provider_;
+        //private IRegisterService provider_;
 
         private List<RtpMidiSession> sessions_ = new List<RtpMidiSession>();
         private MidiSessionEventScheduler scheduler_ = new MidiSessionEventScheduler();

@@ -8,14 +8,14 @@
 
   <Identity
     Name="b1ae0fcb-1362-4574-9e6f-9cfd723f0792"
-    Publisher="CN=Gianni Peschiutta"
+    Publisher="CN=Artemia76"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="b1ae0fcb-1362-4574-9e6f-9cfd723f0792" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MidiApp</DisplayName>
-    <PublisherDisplayName>Gianni Peschiutta</PublisherDisplayName>
+    <PublisherDisplayName>Artemia76</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -36,7 +36,7 @@
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="MidiApp"
-        BackgroundColor="transparent">
+        BackgroundColor="black">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
@@ -44,6 +44,8 @@
   </Applications>
 
   <Capabilities>
-    <Capability Name="internetClient" />
+	  <Capability Name="privateNetworkClientServer" />
+	  <Capability Name="internetClientServer" />
+	  <Capability Name="internetClient" />
   </Capabilities>
 </Package>
