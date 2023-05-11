@@ -16,7 +16,7 @@
         </Grid.Background>
         <StackPanel HorizontalAlignment="Left" Height="55" Margin="38,27,0,0" VerticalAlignment="Top" Width="866" Orientation="Horizontal">
             <TextBox x:Name="txtPortNumber" HorizontalAlignment="Left" Margin="4, 3, 4, 0" TextWrapping="Wrap" Text="5004" VerticalAlignment="Top" Width="558" TextChanged="txtPortNumber_TextChanged"/>
-            <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStart_Click" Background="#FFE2E2E2"/>
+            <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStart_Click" Background="#FFE2E2E2" HighContrastAdjustment="Auto"/>
             <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="4, 0, 4, 0" VerticalAlignment="Top" Click="btnStop_Click" Background="#FFEAEAEA"/>
         </StackPanel>
         <TextBox x:Name="txtIPAddress" HorizontalAlignment="Left" Margin="1054,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="283" IsReadOnly="True"/>
